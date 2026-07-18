@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    --main-color: #5daeff;
+    --text-main-color: #000000;
+}
+.login-container{
+    display: flex;
+    background-color: var(--main-color);
+    opacity: 0.9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+    height: 40vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+}
+fieldset{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+fieldset legend{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+fieldset label{
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--text-main-color);
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: var(--text-main-color);
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    height: 30px;
+}
+.login-btn{
+    margin: 10px;
+    background-color: var(--main-color);
+    color: var(--text-main-color);
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 30%;
+    height: 30%;
+}
+.top-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    width: 100vw;
+    height: 20vh;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+body{
+    background-image: url("Assets/image_ba34222f.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    image-rendering: lazy;
+}
+@media screen and (min-width: 1024px) {
+    .login-container{
+        width: 40vw;
+        height: 50vh;
+        top: 25%;
+        left: 30%;
+    }
+    .top-header{
+        font-size: 30px;
+        height: 15vh;
+        transform: scale(1.2);
+        transition: transform 0.3s ease-in;
+    }
+    body{
+        overflow: hidden;
+    }
+}
+@media (hover:hover){
+    .login-btn:hover{
+        background-color: var(--text-main-color);
+        color: var(--main-color);
+        transition: all 0.3s ease-in-out;
+    }
+}
