@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>SNTNS Login</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <main>
         <section>
-            <h1 class="top-header">Tricycle Scheduler</h1>
-            <div class="login-container">
-                <form method="POST" id="form">
-                    <fieldset>
-                        <legend>Log In</legend>
-                        <label for="username">Username:<input type="text" id="username" placeholder="e.g John Doe" class="input-field" required></label>
-                        <label for="password">Password:<input type="password" id="password" placeholder="Password" class="input-field" required></label>
-                        <button class="login-btn">Log In</button>
-                    </fieldset>
-                </form>
-                <a href="Registration/registration.html">Don't have an account? Register here.</a>
+            <div class="login-form">
+                <div class="login-input left">
+                    <img src="Assets/Sakayna.jpeg" alt="Logo" class="login-logo-img">
+                    <h1>Admin Login</h1>
+                    <h2>Welcome Back!</h2>
+                    <form action="" class="form-container">
+                        <label for="username" class="login-label">Username</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="password" class="login-label">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <a href="#" id="forgot-password">Forgot Password?</a>
+                        <input type="submit" id="submit-btn" value="Log In">
+                    </form>
+                </div>
+                <div class="login-logo right">
+                    <h1>(SNTNS) Sakay na Turno na System</h1>
+                    <h3>Developed by: Acelo and Tanawan</h3>
+                </div>
             </div>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
