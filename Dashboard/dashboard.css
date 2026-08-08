@@ -69,11 +69,27 @@ main{
     transform: translateY(-0.5rem);
 }
 .header-icons{
+    position: relative;
     width: 1.8rem;
     height: 1.8rem;
     background-color: var(--theme-color1);
     border-radius: 15%;
     padding: 0.2rem;
+    z-index: 1;
+}
+.menu-container button{
+    position: relative;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    z-index: 2;
+}
+.section-overview{
+    display: none;
 }
 
 /*Board Summary Section*/
@@ -299,6 +315,36 @@ th, td{
 }
 
 
+/*Menu*/
+.mobile-only{
+    display: none;
+    position: absolute;
+    top: 5rem;
+    right: 0.7rem;
+    width: 7rem;
+    height: 10rem;
+    background-color: var(--theme-color1);
+    z-index: 0;
+    padding: 0.5rem;
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
+    border-radius: 0.5rem;
+}
+
+.mobile-only.menu-show{
+    display: block;
+    z-index: 1;
+}
+.mobile-only a, li{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 0.3rem;
+    color: var(--theme-color2);
+}
+.mobile-only ul{
+    margin-top: 1.5rem;
+}
+
 
 @media screen and (min-width: 1024px) and (max-width: 1920px){
     main{
@@ -424,6 +470,12 @@ th, td{
     }
     li:active{
         box-shadow: inset 0 0 5px var(--theme-color1);
+    }
+    .laptop-only ul > li:nth-child(1){
+        background-color: var(--theme-color2);
+    }
+    .laptop-only ul > li:nth-child(1) > a{
+        color: var(--theme-color1);
     }
     .header-icons{
         width: 2.5rem;

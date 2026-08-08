@@ -4,31 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
 </head>
 <body>
     <main>
-        <section>
-            <form method="POST" id="form">
-                <fieldset>
-                    <legend>Register</legend>
-                    <div class="form-group">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
+        <section class="sidebar">
+            <div class="sidebar-header">
+                <img src="../Assets/Sakayna.jpeg" alt="logo" class="SNTNS-logo">
+                <div class="sidebar-header-text">
+                    <h1>SNTNS</h1>
+                    <h3>Sakay na Turno na System</h3>
+                </div>
+            </div>
+            <div class="section-header">
+                <div>
+                    <img src="../Assets/add_driver.png" alt="dashboard icon" class="header-icons">
+                    <span id="section-header-text">Register Driver</span>
+                </div>
 
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                <div class="menu-container">
+                    <button class="menu"><img src="../Assets/menu_Icon.png" alt="menu icon" class="header-icons"></button>
+                    <div class="mobile-only">
+                        <ul>
+                            <li><img src="/Assets/dashboard_Icon.png" alt="dashboard Icon" class="list-style"><a href="/Dashboard/dashboard.html">Dashboard</a></li>
+                            <li><img src="/Assets/license_logo.png" alt="driver logo" class="list-style"><a href="/Drivers/driver.html">Driver</a></li>
+                            <li><img src="/Assets/add_driver.png" alt="add driver icon" class="list-style"><a href="/Registration/registration.html">Register</a></li>
+                            <li><img src="/Assets/Calendar_Nav.png" alt="calendar icon" class="list-style"><a href="">Schedule</a></li>
+                            <li><img src="/Assets/Log Out.png" alt="logout icon" class="list-style"><a href="">Log Out</a></li>
+                        </ul>
                     </div>
-                    
-                    <div>
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <button type="submit">Register</button>
-                </fieldset>
-            </form>
+                </div>
+            </div>
+            <nav class="laptop-only">
+                <ul>
+                    <li><img src="../Assets/dashboard_Icon.png" alt="dashboard icon" class="header-icons"><a href="#" class="nav-link">Dashboard</a></li>
+                    <li><img src="../Assets/license_logo.png" alt="drivers icon" class="header-icons"><a href="/Drivers/driver.html" class="nav-link">Drivers</a></li>
+                    <li><img src="../Assets/add_driver.png" alt="register icon" class="header-icons"><a href="/Registration/registration.html" class="nav-link">Register Driver</a></li>
+                    <li><img src="../Assets/Calendar_Nav.png" alt="schedule icon" class="header-icons"><a href="#" class="nav-link">Schedule</a></li>
+                    <li><img src="../Assets/Log Out.png" alt="logout icon" class="header-icons"><a href="#" class="nav-link">Logout</a></li>
+                </ul>
+            </nav>
         </section>
+
+        <section class="section-overview">
+            <h1>Register New Driver</h1>
+        </section>
+
+        <section class="form-section">
+            <div class="form-container">
+                <div class="form-header">
+                    <h3>Driver's Details</h3>
+                </div>
+                    <form action="" method="post">
+                        <div class="personal-information">
+                            <h3>Personal Information</h3>
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" placeholder="e.g John M. Doe" required>
+                            <label for="phone">Phone No.:</label>
+                            <input type="text" id="phone" placeholder="+63 1234567689" required>
+                            <label for="licsense">Driver's Licsense:</label>
+                            <input type="file" id="imageInput" accept="image/*" required>
+                            <img src="" alt="" id="imagePreview">
+                        </div>
+
+                        <div class="vehicle-information">
+                            <h3>Vehicle Information</h3>
+                            <label for="vehicle">Vehicle Type</label>
+                            <select name="vehicle" id="vehivle">
+                                <option value="bus">BUS</option>
+                                <option value="jeep">JEEP</option>
+                                <option value="bao">BAO-BAO</option>
+                            </select>
+                            <label for="plate">Plate No.:</label>
+                            <input type="text" name="plate" id="plate" placeholder="e.g., ABC 123" required>
+                            <label for="fee">Monthly Fee:</label>
+                            <input type="text" name="fee" id="fee" placeholder="0.00" required>
+                            <label for="imageInput2by2">2x2 Photo: </label>
+                            <input type="file" name="photo" id="2by2" accept="image/*" required>
+                            <img src="" alt="" id="imagePreview2by2">
+                        </div>
+                        <input type="submit" name="submit" id="submit">
+                    </form>
+
+            </div>
+        </section>
+
+
+
     </main>
+    <script src="registration.js"></script>
 </body>
 </html>

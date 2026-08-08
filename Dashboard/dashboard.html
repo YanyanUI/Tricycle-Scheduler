@@ -23,13 +23,22 @@
                 </div>
 
                 <div class="menu-container">
-                    <a href="#"><img src="../Assets/menu_Icon.png" alt="menu icon" class="header-icons"></a>
+                    <button class="menu"><img src="../Assets/menu_Icon.png" alt="menu icon" class="header-icons"></button>
+                    <div class="mobile-only">
+                        <ul>
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="/Drivers/driver.html">Driver</a></li>
+                            <li><a href="">Register</a></li>
+                            <li><a href="">Schedule</a></li>
+                            <li><a href="">Log Out</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <nav class="laptop-only">
                 <ul>
                     <li><img src="../Assets/dashboard_Icon.png" alt="dashboard icon" class="header-icons"><a href="#" class="nav-link">Dashboard</a></li>
-                    <li><img src="../Assets/license_logo.png" alt="drivers icon" class="header-icons"><a href="#" class="nav-link">Drivers</a></li>
+                    <li><img src="../Assets/license_logo.png" alt="drivers icon" class="header-icons"><a href="/Drivers/driver.html" class="nav-link">Drivers</a></li>
                     <li><img src="../Assets/add_driver.png" alt="register icon" class="header-icons"><a href="/Registration/registration.html" class="nav-link">Register Driver</a></li>
                     <li><img src="../Assets/Calendar_Nav.png" alt="schedule icon" class="header-icons"><a href="#" class="nav-link">Schedule</a></li>
                     <li><img src="../Assets/Log Out.png" alt="logout icon" class="header-icons"><a href="#" class="nav-link">Logout</a></li>
@@ -232,5 +241,6 @@
             <p class="reserved-rights">&copy; 2023 SNTNS. All rights reserved.</p>
         </div>
     </footer>
+    <script src="dashboard.js"></script>
 </body>
 </html>
