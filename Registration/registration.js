@@ -33,7 +33,8 @@ imageInput2by2.addEventListener('change', (event) => {
         imagePreview2by2.style.display = 'block';
         imagePreview2by2.style.width = '100%'
         imagePreview2by2.style.height = 'auto';
-        imagePreview2by2.style.overflow = 'auto';
+        imagePreview2by2.style.overflow = 'hidden';
+        imagePreview2by2.style.overflowY = 'scroll';
 
     }
 })

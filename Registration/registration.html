@@ -55,43 +55,82 @@
                 <div class="form-header">
                     <h3>Driver's Details</h3>
                 </div>
-                    <form action="" method="post">
-                        <div class="personal-information">
-                            <h3>Personal Information</h3>
-                            <label for="name">Full Name:</label>
+                <form action="" method="post">
+                    <div class="personal-information">
+                        <h3>Personal Information</h3>
+                        <label for="name">Full Name:</label>
+
+                        <div class="input-container">
+                            <img src="../Assets/name_icon.png" alt="username icon" class="icon-input">
                             <input type="text" id="name" placeholder="e.g John M. Doe" required>
-                            <label for="phone">Phone No.:</label>
-                            <input type="text" id="phone" placeholder="+63 1234567689" required>
-                            <label for="licsense">Driver's Licsense:</label>
-                            <input type="file" id="imageInput" accept="image/*" required>
-                            <img src="" alt="" id="imagePreview">
                         </div>
 
-                        <div class="vehicle-information">
-                            <h3>Vehicle Information</h3>
-                            <label for="vehicle">Vehicle Type</label>
-                            <select name="vehicle" id="vehivle">
-                                <option value="bus">BUS</option>
-                                <option value="jeep">JEEP</option>
-                                <option value="bao">BAO-BAO</option>
-                            </select>
-                            <label for="plate">Plate No.:</label>
-                            <input type="text" name="plate" id="plate" placeholder="e.g., ABC 123" required>
-                            <label for="fee">Monthly Fee:</label>
-                            <input type="text" name="fee" id="fee" placeholder="0.00" required>
-                            <label for="imageInput2by2">2x2 Photo: </label>
-                            <input type="file" name="photo" id="2by2" accept="image/*" required>
-                            <img src="" alt="" id="imagePreview2by2">
+                        <label for="phone">Phone No.:</label>
+
+                        <div class="input-container">
+                            <img src="../Assets/phone_icon.png" alt="phone icon" class="icon-input">
+                            <input type="text" id="phone" placeholder="+63 1234567689" required>
                         </div>
-                        <input type="submit" name="submit" id="submit">
-                    </form>
+                        <label for="licsense">Driver's Licsense:</label>
+                        <input type="file" id="imageInput" accept="image/*" required>
+                        <img src="" alt="" id="imagePreview">
+                    </div>
+
+                    <div class="vehicle-information">
+                        <h3>Vehicle Information</h3>
+                        <label for="vehicle">Vehicle Type</label>
+                        <select name="vehicle" id="vehivle">
+                            <option value="bus">BUS</option>
+                            <option value="jeep">JEEP</option>
+                            <option value="bao">BAO-BAO</option>
+                        </select>
+                        <div class="inline-input">
+                            <label for="plate">Plate No.:</label>
+                            <div class="input-container">
+                                <img src="../Assets/license_logo.png" alt="plate number icon" class="icon-input">
+                                <input type="text" name="plate" id="plate" placeholder="e.g., ABC 123" required>
+                            </div>
+                            <label for="fee">Monthly Fee:</label>
+                            <div class="input-container">
+                                <img src="../Assets/dollar_sign.png" alt="membership icon" class="icon-input">
+                                <input type="text" name="fee" id="fee" placeholder="0.00" required>
+                            </div>
+                        </div>
+                        <label for="imageInput2by2">2x2 Photo: </label>
+                        <input type="file" name="photo" id="2by2" accept="image/*" required>
+                        <img src="" alt="" id="imagePreview2by2">
+                    </div>
+                    <input type="submit" name="submit" id="submit">
+                </form>
 
             </div>
         </section>
-
-
-
     </main>
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../Assets/Sakayna.jpeg" alt="SNTNS Logo">
+                <div class="sidebar-header-text">
+                    <h1>SNTNS</h1>
+                    <h3>Sakay na Turno na System</h3>
+                </div>
+            </div>
+
+            <div class="developer-section">
+                <h3>Developed by:</h3>
+                <p>Rhush Kevin O. Acelo</p>
+                <p>DevYan/YanyanUI</p>
+            </div>
+
+            <div class="Social-link">
+                <h3>Github Links</h3>
+                <a href="https://github.com/Rhush" target="_blank">Rhush Kevin O. Acelo</a>
+                <a href="https://github.com/YanyanUI" target="_blank">YanyanUI</a>
+            </div>
+
+            <p class="reserved-rights">&copy; 2023 SNTNS. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="registration.js"></script>
 </body>
 </html>
