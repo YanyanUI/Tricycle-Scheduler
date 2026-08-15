@@ -122,6 +122,8 @@ main{
 .mobile-only ul{
     margin-top: 1.5rem;
 }
+
+
 .form-section{
     grid-area: form-section;
 }
