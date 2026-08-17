@@ -17,6 +17,8 @@ main{
     grid-template-areas: 'sidebar' 'form-section';
     background-color: #E6e6e6;
     gap: 0.5rem;
+    overflow: hidden;
+    max-height: 100vh;
 }
 .laptop-only{
     display: none;
@@ -192,4 +194,88 @@ main{
 .sche-btn:active{
     background-color: var(--theme-color2);
     color: var(--theme-color1);
+}
+
+.table-container{
+    max-height: 44vh;
+    overflow-y: scroll;
+}
+table{
+    font-family: Roboto, sans-serif;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: start;
+    border-radius: 0.5rem;
+}
+thead{
+    position: sticky;
+    top: 0;
+    background-color: var(--theme-color1);
+    color: var(--theme-color3);
+}
+tbody{
+    overflow-y: scroll;
+}
+th, td{
+    background-color: var(--theme-color3);
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+    border-bottom: 1px solid black;
+}
+th{
+    color: var(--theme-color1);
+    background-color: var(--theme-color2);
+}
+
+/*Footer Section*/
+.footer-section{
+    background-color: var(--theme-color1);
+    color: var(--theme-color3);
+    padding: 1.5rem;
+    grid-area: footer;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'footer-logo developer-section social-link'
+    'footer-logo reserved-rights reserved-rights';
+    gap: 1.5rem;
+}
+.footer-logo{
+    grid-area: footer-logo;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.footer-logo img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.developer-section{
+    grid-area: developer-section;
+    font-size: 0.5em;
+    font-family: Roboto, sans-serif;
+}
+.Social-link{
+    grid-area: social-link;
+    font-family: Roboto, sans-serif;
+    font-size: 0.5em;
+}
+.Social-link a{
+    color: var(--theme-color3);
+    text-decoration: none;
+}
+.Social-link a:hover{
+    text-decoration: underline;
+    color: var(--theme-color2);
+}
+.Social-link a:active{
+    color: var(--theme-color2);
+}
+.reserved-rights{
+    grid-area: reserved-rights;
+    font-family: Roboto, sans-serif;
+    font-size: 0.6em;
 }
